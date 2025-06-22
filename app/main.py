@@ -38,7 +38,7 @@ class CarWashStation:
         return round(income, 1)
 
     def rate_service(self, mark: int) -> None:
-        if mark <= 5:
+        if 0 <= mark <= 5:
             all_marks_sum = self.average_rating * self.count_of_ratings + mark
             self.count_of_ratings += 1
             self.average_rating =\
